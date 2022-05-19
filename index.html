@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="pt-br" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/svg+xml" href="/src/favlogo.svg" />
+  <title>Cura Calvice</title>
+
+  <meta name="author" content="José Augusto">
+  <meta name="description" content="Alopecia, Calvice, THD">
+  <meta name="copyright" content="© 2022 Details Tech" />
+  <meta name="rating" content="general" />
+
+  <meta name="keywords"
+    content="details, tech, detailstech, details-tech, detailstech.com, detailstech.com.br, atendimento, tecnico, técnico, suporte, computador, pc, pcs, pc's, notebook, notebooks, notebook's, Fernando, Nascimento, Lima, samsung, apple, positivo, lg, acer, asus">
+  <meta name="robots" content="all" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https: //fonts.googleapis.com/css2? família= Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700 & display=swap"
+    rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Montserrat', sans-serif;
+      src: url("font.otf") format("opentype");
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      background-color: #0D1321;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 700px;
+      max-width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .black {
+      background-color: #F0EBD8;
+      padding: 10px;
+      text-align: center;
+      border-radius: 7px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    .answer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 991px) {
+      .answer {
+        flex-direction: column;
+      }
+    }
+
+    .btn {
+      flex-grow: 0.48;
+      border-radius: 7px;
+      padding: 5px 10px;
+      font-size: 30px;
+      background-color: #748CAB;
+      outline: none;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 5px;
+      border: none;
+      transition-duration: 500ms;
+    }
+
+    .btn:hover {
+      background-color: #60738b;
+    }
+
+    .black h1 {
+      color: #1D2D44;
+    }
+
+    .black p {
+      font-size: 24px;
+      color: #3E5C76;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .footer {
+      position: relative;
+      bottom: 0;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      color: #fff;
+      left: 0;
+      right: 0;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="black">
+      <div id="step1">
+        <h1>
+          Alopecia Atinge 35% dos Homens no Mundo Todo!
+        </h1>
+
+        <p>A Perda de Cabelo te Deixa Preocupado?</p>
+
+        <div class="answer">
+          <button class="btn" onclick="step2()">SIM</button>
+          <button class="btn" onclick="step2()">NÃO</button>
+        </div>
+      </div>
+
+      <div id="step2" class="hide">
+        <h1>Sobre a Calvice...</h1>
+
+        <p>Ela Interfere Diretamente na Sua Auto Estima?</p>
+
+        <div class="answer">
+          <button class="btn" onclick="step3()">SIM</button>
+          <button class="btn" onclick="step3()">NÃO</button>
+        </div>
+      </div>
+
+      <div id="step3" class="hide">
+        <h1>Não se Preocupe!!!</h1>
+
+        <p>Sabia que já Existe Cura para a Calvice?</p>
+
+        <div class="answer">
+          <button class="btn" onclick="step4()">Sabia</button>
+          <button class="btn" onclick="step4()">Quero Saber Mais</button>
+        </div>
+      </div>
+
+      <div id="step4" class="hide">
+        <h1>Na Europa já tem comprovações de curas Apenas tratando a (THD)</h1>
+
+        <p>O vídeo a seguir tem um limite para pouquíssimas pessoas verem ao mesmo tempo... Você pretende ver até o
+          fim?
+        </p>
+
+        <div class="answer">
+          <button class="btn" onclick="step5()">SIM</button>
+          <button class="btn" onclick="step5()">Quero Saber Mais</button>
+        </div>
+      </div>
+
+      <div id="step5" class="hide">
+        <video id="stepVideo" width="100%" height="auto" poster="imagem" source src="video.mp4" type="video/mp4"
+          onended="step6()">
+      </div>
+
+      <div id="step6" class="hide">
+        <h2>Veja os Comentários, Volte a ter Confiança!</h2>
+
+        <img src="comentario.png" alt="Comentários do facebook" width="80%" style="margin-bottom: 30px" />
+
+        <button class="btn" onclick="redirect()">Quero Conhecer o Segredo!!!</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte
+        nem
+        é endossado pelo Facebook. Facebook é uma marca comercial da Meta, Inc.</p>
+
+      <p style="text-align: center; font-weight: bold;"><a class="link" href="termos-de-uso.html">Termos de
+          Uso</a> | <a class="link" href="politica-de-privacidade.html">Política de Privacidade</a></p>
+    </div>
+  </div>
+
+  <script>
+    function step2() {
+      document.getElementById("step1").classList.add("hide")
+      document.getElementById("step2").classList.remove("hide")
+    }
+
+    function step3() {
+      document.getElementById("step2").classList.add("hide")
+      document.getElementById("step3").classList.remove("hide")
+    }
+
+    function step4() {
+      document.getElementById("step3").classList.add("hide")
+      document.getElementById("step4").classList.remove("hide")
+    }
+
+    function step5() {
+      document.getElementById("step4").classList.add("hide")
+      document.getElementById("step5").classList.remove("hide")
+
+      document.getElementById("stepVideo").play();
+    }
+
+    function step6() {
+      document.getElementById("step5").classList.add("hide")
+      document.getElementById("step6").classList.remove("hide")
+    }
+
+    function redirect() {
+      location.href = "https://folixil.com.br/?mcr=ATA20439436" // link para redirecionar
+    }
+
+
+  </script>
+</body>
+
+</html>
