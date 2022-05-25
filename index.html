@@ -19,7 +19,8 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
 
-  <meta name="keywords" content="Calvice, tratamento calvice, careca, formulacalvice, curadacalvice, calvo, homens calvos, homens" />
+  <meta name="keywords"
+    content="Calvice, tratamento calvice, careca, formulacalvice, curadacalvice, calvo, homens calvos, homens" />
   <meta name="robots" content="all" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -208,7 +209,9 @@
 
       <div id="step5" class="hide">
         <video id="stepVideo" width="100%" height="auto" poster="imagem" source src="video.mp4" type="video/mp4"
-          onended="step6()">
+          onended="step6()"></video>
+
+        <button class="btn" onclick="step6()" style="margin-top: 20px">Pular Video e conhecer o segredo</button>
       </div>
 
       <div id="step6" class="hide">
@@ -250,10 +253,11 @@
       document.getElementById("step5").classList.remove("hide")
 
       document.getElementById("stepVideo").play();
-      
+
     }
 
     function step6() {
+      document.getElementById("stepVideo").pause();
       document.getElementById("step5").classList.add("hide")
       document.getElementById("step6").classList.remove("hide")
     }
